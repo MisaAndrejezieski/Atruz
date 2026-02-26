@@ -1,0 +1,197 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefcfb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #a3d2ca;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #5eaaa8;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Seção de cadastro */
+.cadastro {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #e9d5ca;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cadastro h2 {
+    color: #5eaaa8;
+}
+
+.cadastro input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.cadastro button {
+    background-color: #a3d2ca;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cadastro button:hover {
+    background-color: #5eaaa8;
+}
+
+#cadastro-msg {
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
+
+/* Seção de login */
+.login {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #a3d2ca;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.login h2 {
+    margin-bottom: 10px;
+}
+
+.login input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+.login button {
+    background-color: #5eaaa8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login button:hover {
+    background-color: #4a8f8d;
+}
+
+#login-msg {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Seção de favor */
+.favor {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fcd1d1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.favor h2 {
+    color: #5eaaa8;
+}
+
+.favor input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.favor button {
+    background-color: #a3d2ca;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.favor button:hover {
+    background-color: #5eaaa8;
+}
+
+#favor-msg {
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
+
+/* Feed */
+.feed {
+    max-width: 600px;
+    margin: auto;
+}
+
+.feed h2 {
+    text-align: center;
+    color: #5eaaa8;
+}
+
+.post {
+    background-color: #fcd1d1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+    margin: 0;
+    color: #5eaaa8;
+}
+
+.post button {
+    background-color: #e9d5ca;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.post button:hover {
+    background-color: #d8b4a0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #a3d2ca;
+    color: white;
+    margin-top: 30px;
+}
