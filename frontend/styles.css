@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefcfb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #a3d2ca;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #5eaaa8;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Perfil */
+.perfil {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fcd1d1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.perfil img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.perfil p {
+    margin: 5px 0;
+}
+
+/* Comunidades */
+.comunidades {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #e9d5ca;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.comunidade {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comunidade h3 {
+    margin: 0;
+    color: #5eaaa8;
+}
+
+.comunidade button {
+    background-color: #a3d2ca;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.comunidade button:hover {
+    background-color: #5eaaa8;
+}
+
+/* Scraps */
+.scraps {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fcd1d1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.scraps form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.scraps input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.scraps button {
+    background-color: #a3d2ca;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.scraps button:hover {
+    background-color: #5eaaa8;
+}
+
+.scrap {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #a3d2ca;
+    color: white;
+    margin-top: 30px;
+}
