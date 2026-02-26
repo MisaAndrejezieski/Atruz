@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-# Tabela de Usuários
+# Usuários
 class Usuario(db.Model):
     __tablename__ = "usuarios"
 
@@ -10,24 +10,41 @@ class Usuario(db.Model):
     nome = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     pontos = db.Column(db.Integer, default=0)
+    foto = db.Column(db.String(200), default="default.png")  # foto de perfil
 
     favores = db.relationship("Favor", backref="usuario", lazy=True)
+    scraps = db.relationship("Scrap", backref="destino", lazy=True)
 
-# Tabela de Favores
+# Favores
 class Favor(db.Model):
     __tablename__ = "favores"
 
     id = db.Column(db.Integer, primary_key=True)
     descricao = db.Column(db.String(200), nullable=False)
-    status = db.Column(db.String(20), default="pendente")  # pendente, aceito, concluído
+    status = db.Column(db.String(20), default="pendente")
     usuario_id = db.Column(db.Integer, db.ForeignKey("usuarios.id"), nullable=False)
 
-# Histórico de transações de pontos
-class Transacao(db.Model):
-    __tablename__ = "transacoes"
+# Comunidades
+class Comunidade(db.Model):
+    __tablename__ = "comunidades"
 
     id = db.Column(db.Integer, primary_key=True)
-    usuario_origem = db.Column(db.Integer, db.ForeignKey("usuarios.id"), nullable=False)
-    usuario_destino = db.Column(db.Integer, db.ForeignKey("usuarios.id"), nullable=False)
-    pontos = db.Column(db.Integer, nullable=False)
+    nome = db.Column(db.String(100), nullable=False)
     descricao = db.Column(db.String(200))
+
+    membros = db.relationship("Usuario", secondary="membros_comunidade", backref="comunidades")
+
+# Associação usuário ↔ comunidade
+membros_comunidade = db.Table("membros_comunidade",
+    db.Column("usuario_id", db.Integer, db.ForeignKey("usuarios.id"), primary_key=True),
+    db.Column("comunidade_id", db.Integer, db.ForeignKey("comunidades.id"), primary_key=True)
+)
+
+# Scraps (recados no perfil)
+class Scrap(db.Model):
+    __tablename__ = "scraps"
+
+    id = db.Column(db.Integer, primary_key=True)
+    mensagem = db.Column(db.String(300), nullable=False)
+    autor_id = db.Column(db.Integer, db.ForeignKey("usuarios.id"), nullable=False)
+    destino_id = db.Column(db.Integer, db.ForeignKey("usuarios.id"), nullable=False)
