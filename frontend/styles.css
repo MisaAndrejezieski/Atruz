@@ -1,0 +1,40 @@
+.favor {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fcd1d1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.favor h2 {
+    color: #5eaaa8;
+}
+
+.favor input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.favor button {
+    background-color: #a3d2ca;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.favor button:hover {
+    background-color: #5eaaa8;
+}
+
+#favor-msg {
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
